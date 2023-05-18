@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function Navbar({ onNavBtnClick }) {
+export default function Navbar({ navOpen, onNavBtnClick }) {
   return (
     <div className="navbar">
       <div className="container nav-container">
@@ -10,7 +10,11 @@ export default function Navbar({ onNavBtnClick }) {
 
         <div className="btn--menu-container">
           <button className="btn--menu" onClick={onNavBtnClick}>
-            <i class="fa-solid fa-bars"></i>
+            {!navOpen ? (
+              <i class="fa-solid fa-bars"></i>
+            ) : (
+              <i class="fa-solid fa-xmark"></i>
+            )}
           </button>
         </div>
       </div>

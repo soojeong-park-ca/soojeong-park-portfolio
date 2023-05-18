@@ -32,7 +32,7 @@ export default function Header() {
 
   return (
     <header className="header">
-      <Navbar onNavBtnClick={handleNavToggle} />
+      <Navbar navOpen={navOpen} onNavBtnClick={handleNavToggle} />
       <Nav navOpen={navOpen} onNavOverlayClick={handleNavOverlayClick} />
     </header>
   );
