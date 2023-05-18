@@ -11,9 +11,9 @@ export default function Navbar({ navOpen, onNavBtnClick }) {
         <div className="btn--menu-container">
           <button className="btn--menu" onClick={onNavBtnClick}>
             {!navOpen ? (
-              <i class="fa-solid fa-bars"></i>
+              <i className="fa-solid fa-bars"></i>
             ) : (
-              <i class="fa-solid fa-xmark"></i>
+              <i className="fa-solid fa-xmark"></i>
             )}
           </button>
         </div>

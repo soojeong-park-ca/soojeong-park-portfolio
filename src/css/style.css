@@ -38,9 +38,11 @@ li {
   width: 100%;
   max-width: 71.25rem;
   padding-inline: 5%;
+  margin: 0 auto;
 }
 
 .header {
+  width: 100%;
   position: sticky;
   top: 0;
 }
@@ -102,10 +104,6 @@ li {
   font-weight: 700;
   text-decoration: underline;
   text-underline-offset: 3px;
-}
-
-main {
-  margin-top: 40rem;
 }
 
 .navbar {

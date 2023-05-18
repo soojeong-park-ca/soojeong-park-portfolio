@@ -1,12 +1,9 @@
-// ❗️ Move this state management to Redux later
 import { useState } from "react";
 
 import Navbar from "./Navbar";
 import Nav from "./Nav";
 
 export default function Header() {
-  // ❗️ Move this state management to Redux later
-  ///////////////////----NAV----///////////////////
   const [navOpen, setNavOpen] = useState(false);
 
   // Nav toggle
@@ -28,7 +25,6 @@ export default function Header() {
     )
       setNavOpen(false);
   };
-  ///////////////////----NAV----///////////////////
 
   return (
     <header className="header">
