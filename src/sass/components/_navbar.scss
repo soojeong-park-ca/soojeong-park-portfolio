@@ -1,0 +1,54 @@
+@use "../abstracts/variables" as v;
+
+.navbar {
+  width: 100%;
+  position: sticky;
+  top: 0;
+
+  background-color: v.$color-bg-white;
+
+  padding: 1.25rem 0;
+
+  z-index: 9999;
+}
+
+.nav-container {
+  width: 100%;
+  max-width: 71.25rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  text-decoration: none;
+
+  &__text {
+    font-family: "Lato", sans-serif; // TEMP
+    font-size: 1.875rem;
+    color: v.$color-text-dark-gray; // TEMP
+    font-weight: 700;
+  }
+}
+
+.btn--menu-container {
+  cursor: pointer;
+  padding: 1.125rem;
+}
+
+.btn--menu {
+  cursor: inherit;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  i {
+    font-size: 1.5rem;
+  }
+}

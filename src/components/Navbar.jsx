@@ -1,22 +1,18 @@
 import { Link } from "react-router-dom";
 
-import Nav from "./Nav";
-
-export default function Navbar() {
+export default function Navbar({ onNavBtnClick }) {
   return (
-    <div className="navbarContainer">
-      <div className="navbar">
-        <div className="navbarLogo">
-          <Link to="/">Soojeong Park</Link>
-        </div>
+    <div className="navbar">
+      <div className="container nav-container">
+        <Link to="/" className="logo">
+          <h4 className="logo__text">Soojeong P</h4>
+        </Link>
 
-        <div className="btnMenuContainer">
-          <button className="btnMenu">btnMenu</button>
+        <div className="btn--menu-container">
+          <button className="btn--menu" onClick={onNavBtnClick}>
+            <i class="fa-solid fa-bars"></i>
+          </button>
         </div>
-      </div>
-
-      <div className="navOverlay">
-        <Nav />
       </div>
     </div>
   );

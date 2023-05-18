@@ -1,0 +1,5 @@
+@mixin btn-hover {
+  @media screen and (hover: hover), screen and (pinter: fine) {
+    @content;
+  }
+}
