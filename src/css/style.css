@@ -254,7 +254,10 @@ li {
   font-size: 1.5rem;
 }
 
-/* :root {
+.section__hero {
+  height: 100vh;
+  padding-top: 6rem;
+} /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
