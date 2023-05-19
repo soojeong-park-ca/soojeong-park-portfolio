@@ -6,6 +6,8 @@
   position: relative;
 
   background-color: v.$color-bg-white;
+  // 💡 rgba(v.$color-bg-white, 0) to become opacity .8 and backdrop-filter: blur(3px) when scrolled
+  opacity: 0.8;
 
   padding: 1.25rem 0;
 
@@ -28,7 +30,8 @@
   &__text {
     font-family: "Lato", sans-serif; // TEMP
     font-size: 1.875rem;
-    color: v.$color-text-dark-gray; // TEMP
+    // color: v.$color-text-dark-gray; // TEMP
+    color: v.$color-text-black; // TEMP
     font-weight: 700;
   }
 }

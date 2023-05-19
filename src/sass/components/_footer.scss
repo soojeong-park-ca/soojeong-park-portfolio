@@ -9,6 +9,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 1rem;
 
     font-size: 1.875rem;
 
@@ -32,7 +33,6 @@
   font-size: 1.5rem;
   color: v.$color-text-dark-gray;
 
-  margin-block: 1rem;
   transition: all 0.15s ease-in-out;
   // z-index: -1;
 
