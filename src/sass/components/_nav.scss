@@ -16,7 +16,7 @@
 
   transform: translateY(0);
   transition: all 0.4s;
-  z-index: 100;
+  z-index: 1000;
 
   &--closed {
     transform: translateY(-150%);
@@ -55,7 +55,8 @@
 
   text-decoration: none;
   color: v.$color-text-dark-gray;
-  font-weight: 400;
+  opacity: 0.8;
+  font-weight: 700;
 
   padding: 1.25rem;
 
@@ -63,15 +64,13 @@
 
   @include m.btn-hover {
     &:hover {
-      font-weight: 700;
-      text-decoration: underline;
-      text-underline-offset: 3px;
+      opacity: 1;
+      @include m.underline;
     }
   }
 }
 
 .nav .nav--active {
-  font-weight: 700;
-  text-decoration: underline;
-  text-underline-offset: 3px;
+  opacity: 1;
+  @include m.underline;
 }
