@@ -1,0 +1,101 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+//////// Navbar
+.logo {
+  text-decoration: none;
+
+  &__text {
+    font-family: "Lato", sans-serif; // TEMP
+    font-size: 1.875rem;
+    color: v.$color-text-black; // TEMP
+    font-weight: 700;
+  }
+}
+
+.btn--menu {
+  i {
+    font-size: 2rem;
+  }
+}
+
+//////// Nav
+.nav a {
+  text-decoration: none;
+  color: v.$color-text-dark-gray;
+  opacity: 0.8;
+  font-weight: 700;
+
+  @include m.btn-hover {
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.nav .nav--active {
+  opacity: 1;
+}
+
+//////// Home
+// Hero
+.hero {
+  h1 {
+    font-size: 2.25rem;
+    font-weight: 500;
+    line-height: 1.05;
+
+    span {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+  }
+
+  .btn--to-contact {
+    text-align: center;
+
+    @include m.btn-hover {
+      &:hover {
+        color: v.$color-text-dark-gray;
+      }
+    }
+  }
+}
+
+//////// Footer
+.footer {
+  &__title {
+    font-size: 1.875rem;
+  }
+}
+
+.btn--to-contact {
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 1.5rem;
+  color: v.$color-text-dark-gray;
+
+  h4 {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: left;
+  }
+
+  @include m.btn-hover {
+    &:hover {
+      color: v.$color-gray-1;
+    }
+  }
+}
+
+.btn--sns {
+  text-decoration: none;
+  color: v.$color-text-dark-gray;
+
+  @include m.btn-hover {
+    &:hover {
+      color: v.$color-gray-1;
+    }
+  }
+}
