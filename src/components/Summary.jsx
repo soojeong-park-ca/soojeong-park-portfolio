@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 import ProjectItem from "./ProjectItem";
 
-import { projectsData } from "../projects";
+import { projectsData } from "../projectsData";
 
 export default function SectionAbout() {
   const projects = projectsData.map(item => <ProjectItem projectInfo={item} />);
