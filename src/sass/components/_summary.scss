@@ -1,0 +1,17 @@
+.section {
+  &__summary {
+    margin: 7rem 0;
+  }
+
+  &__title {
+    margin-bottom: 3rem;
+  }
+
+  &__body {
+    margin-bottom: 3rem;
+  }
+}
+
+.project__list {
+  grid-row-gap: 3.75rem;
+}

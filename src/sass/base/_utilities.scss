@@ -4,3 +4,9 @@
   padding-inline: 7%;
   margin: 0 auto;
 }
+
+.grid-col-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+}

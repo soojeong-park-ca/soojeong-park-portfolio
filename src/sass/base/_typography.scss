@@ -1,6 +1,21 @@
 @use "../abstracts/variables" as v;
 @use "../abstracts/mixins" as m;
 
+////////////////////////////////////////////////
+//////// general
+html {
+  font-family: sans-serif; // TEMP
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: v.$color-text-dark-gray; // TEMP
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: 400;
+}
+
+////////////////////////////////////////////////
 //////// Navbar
 .logo {
   text-decoration: none;
@@ -19,6 +34,7 @@
   }
 }
 
+////////////////////////////////////////////////
 //////// Nav
 .nav a {
   text-decoration: none;
@@ -37,6 +53,7 @@
   opacity: 1;
 }
 
+////////////////////////////////////////////////
 //////// Home
 // Hero
 .hero {
@@ -62,6 +79,12 @@
   }
 }
 
+// SectionSummary
+.section__title {
+  font-size: 1.875rem;
+}
+
+////////////////////////////////////////////////
 //////// Footer
 .footer {
   &__title {
