@@ -4,13 +4,13 @@
 .nav-overlay {
   // display: none; // on desktop version
   background-attachment: scroll;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(3px);
 
   width: 100%;
   height: 100vh;
 
   position: absolute;
-  top: 100%;
+  top: 0;
   right: 0;
   overflow: hidden;
 
@@ -20,7 +20,6 @@
 
   &--closed {
     display: none;
-    // transform: translateY(-150%);
   }
 }
 
@@ -38,6 +37,7 @@
 
   // background-color: v.$color-bg-light-gray;
   background-color: v.$color-bg-white;
+  backface-visibility: hidden;
   text-align: left;
 
   padding-block: 1rem;

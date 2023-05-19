@@ -10,8 +10,13 @@
   opacity: 0.8;
 
   padding: 1.25rem 0;
+  transition: all 0.15s ease;
 
   z-index: 9999;
+}
+
+.navbar-box-shadow {
+  box-shadow: 0 0.15rem 0.3rem rgba(v.$color-text-black, 0.1);
 }
 
 .nav-container {
