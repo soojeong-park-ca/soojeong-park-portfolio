@@ -10,16 +10,24 @@ export default function Footer() {
             <br />
             Let's work together.
           </h4>
-          <Link to="/contact" className="btn--to-contact">
+          <Link to="contact" className="btn--to-contact">
             Get in touch
           </Link>
         </div>
         <div className="footer__contact">
           <div className="sns-buttons">
-            <a href="" className="btn--sns">
+            <a
+              href="https://github.com/soojeong-park-ca"
+              target="_blank"
+              className="btn--sns"
+            >
               GitHub
             </a>
-            <a href="" className="btn--sns">
+            <a
+              href="https://www.linkedin.com/in/soojeong-park-ca/"
+              target="_blank"
+              className="btn--sns"
+            >
               LinkedIn
             </a>
           </div>

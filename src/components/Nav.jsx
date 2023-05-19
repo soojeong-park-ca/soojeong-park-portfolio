@@ -2,10 +2,11 @@ import { NavLink } from "react-router-dom";
 
 export default function Nav({ navOpen, onNavOverlayClick }) {
   return (
-    <div
-      className={`nav-overlay ${!navOpen ? "nav-overlay--closed" : ""}`}
-      onClick={onNavOverlayClick}
-    >
+    <>
+      <div
+        className={`nav-overlay ${!navOpen ? "nav-overlay--closed" : ""}`}
+        onClick={onNavOverlayClick}
+      ></div>
       <nav className={`nav ${!navOpen ? "nav--closed" : ""}`}>
         <NavLink
           to="."
@@ -32,6 +33,6 @@ export default function Nav({ navOpen, onNavOverlayClick }) {
           Contact
         </NavLink>
       </nav>
-    </div>
+    </>
   );
 }

@@ -4,7 +4,7 @@
 .nav-overlay {
   // display: none; // on desktop version
   background-attachment: scroll;
-  // backdrop-filter: blur(3px);
+  backdrop-filter: blur(2px);
 
   width: 100%;
   height: 100vh;
@@ -16,10 +16,11 @@
 
   transform: translateY(0);
   transition: all 0.4s;
-  z-index: 1000;
+  z-index: 999;
 
   &--closed {
-    transform: translateY(-150%);
+    display: none;
+    // transform: translateY(-150%);
   }
 }
 
@@ -27,7 +28,7 @@
   width: 100%;
 
   position: absolute;
-  top: 0;
+  top: 100%;
   right: 0;
 
   display: flex;
