@@ -68,6 +68,13 @@ body {
     }
   }
 
+  h4 {
+    color: v.$color-gray-1;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+
   .btn--to-contact {
     text-align: center;
 

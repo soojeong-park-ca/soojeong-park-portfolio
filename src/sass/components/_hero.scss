@@ -2,16 +2,20 @@
 @use "../abstracts/mixins" as m;
 
 .section__hero {
-  height: calc(100vh - 100px); // viewport height minus header height
+  height: fit-content;
+  // height: calc(100vh - 100px); // viewport height minus header height
+  background: linear-gradient(135deg, #ff8080, #ffa366, #ffd699);
+  background-size: 400% 400%;
+  animation: Gradient 4s ease infinite;
 
-  padding-top: 6rem;
+  padding-block: 8rem;
 }
 
 .hero {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding-block: 2rem 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto;
+  row-gap: 2rem;
 
   .btn--to-contact {
     width: 100%;
@@ -27,22 +31,4 @@
       }
     }
   }
-}
-
-.hero-bg {
-  width: 100%;
-  height: 100%;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  background: linear-gradient(135deg, #ff8080, #ffa366, #ffd699);
-  background-size: 400% 400%;
-  animation: Gradient 4s ease infinite;
-
-  overflow: hidden;
-  padding: 0;
-  margin: 0px;
-  z-index: -1;
 }

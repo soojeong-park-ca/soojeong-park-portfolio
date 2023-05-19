@@ -46,7 +46,7 @@ export const projectsData = [
   },
   {
     id: "4",
-    title: "Soojeong Park Portfolio Website",
+    title: "Portfolio Website",
     description: "Currently building this app",
     imageUrl: "",
     githubUrl: "",

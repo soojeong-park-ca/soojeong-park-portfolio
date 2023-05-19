@@ -93,6 +93,12 @@ body {
   font-size: 2.5rem;
   font-weight: 700;
 }
+.hero h4 {
+  color: #383838;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
 .hero .btn--to-contact {
   text-align: center;
 }
@@ -124,7 +130,7 @@ body {
 }
 @media screen and (hover: hover), screen and (pinter: fine) {
   .btn--to-contact:hover {
-    color: #646464;
+    color: #383838;
   }
 }
 
@@ -134,7 +140,7 @@ body {
 }
 @media screen and (hover: hover), screen and (pinter: fine) {
   .btn--sns:hover {
-    color: #646464;
+    color: #383838;
   }
 }
 
@@ -198,15 +204,18 @@ body {
 }
 
 .section__hero {
-  height: calc(100vh - 100px);
-  padding-top: 6rem;
+  height: fit-content;
+  background: linear-gradient(135deg, #ff8080, #ffa366, #ffd699);
+  background-size: 400% 400%;
+  animation: Gradient 4s ease infinite;
+  padding-block: 8rem;
 }
 
 .hero {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding-block: 2rem 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto;
+  row-gap: 2rem;
 }
 .hero .btn--to-contact {
   width: 100%;
@@ -219,21 +228,6 @@ body {
   .hero .btn--to-contact:hover {
     transform: translate(1px, 2px);
   }
-}
-
-.hero-bg {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: linear-gradient(135deg, #ff8080, #ffa366, #ffd699);
-  background-size: 400% 400%;
-  animation: Gradient 4s ease infinite;
-  overflow: hidden;
-  padding: 0;
-  margin: 0px;
-  z-index: -1;
 }
 
 .nav-overlay {
@@ -328,8 +322,15 @@ body {
   transition: all 0.15s ease;
 }
 
+.project__text {
+  grid-row: 2/3;
+}
+.project__img {
+  grid-row: 1/2;
+}
+
 .section__summary {
-  margin-top: 7rem;
+  margin-block: 7rem 5rem;
 }
 .section__title {
   margin-bottom: 3rem;
@@ -340,10 +341,6 @@ body {
 
 .project__list {
   grid-row-gap: 3.75rem;
-}
-
-.main {
-  margin-bottom: 5rem;
 }
 
 /* :root {
