@@ -1,20 +1,8 @@
-import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-export default function Navbar({ navOpen, onNavBtnClick }) {
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    window.onscroll = function () {
-      if (window.scrollY > 50) setScrolled(true);
-      else {
-        setScrolled(false);
-      }
-    };
-  }, [window.scrollY]);
-
+export default function Navbar({ navOpen, onNavBtnClick, scrolled }) {
   return (
-    <div className={`navbar ${scrolled && "navbar-box-shadow"}`}>
+    <div className={`navbar ${scrolled ? "navbar-scrolled" : ""}`}>
       <div className="container nav-container">
         <Link to="/" className="logo">
           <h4 className="logo__text">Soojeong P</h4>
