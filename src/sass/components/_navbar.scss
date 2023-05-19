@@ -9,7 +9,8 @@
   // 💡 rgba(v.$color-bg-white, 0) to become opacity .8 and backdrop-filter: blur(3px) when scrolled
   opacity: 0.8;
 
-  padding: 1.25rem 0;
+  // padding: 1.25rem 0;
+  padding: 1.516rem 0;
   transition: all 0.15s ease;
 
   z-index: 9999;
@@ -43,7 +44,7 @@
 
 .btn--menu-container {
   cursor: pointer;
-  padding: 1.125rem;
+  // padding: 1.125rem;
 }
 
 .btn--menu {
@@ -59,6 +60,7 @@
   transition: all 0.15s ease;
 
   i {
-    font-size: 1.5rem;
+    // font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
