@@ -43,3 +43,28 @@
 
   transition: all 0.15s ease;
 }
+
+// DESKTOP
+.navbar--desktop {
+  .nav-overlay {
+    display: none;
+  }
+
+  .nav {
+    // reset
+    position: static;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+
+    padding: 0;
+
+    a {
+      width: 4rem;
+      padding: 0;
+      text-align: center;
+    }
+  }
+}

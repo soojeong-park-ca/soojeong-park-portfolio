@@ -6,7 +6,9 @@ import Nav from "./Nav";
 export default function Header() {
   const [navOpen, setNavOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [mobileNavbar, setMobileNavbar] = useState(false);
 
+  //// navOpen
   // Nav toggle
   const handleNavToggle = () => {
     setNavOpen(prev => !prev);
@@ -27,15 +29,38 @@ export default function Header() {
       setNavOpen(false);
   };
 
+  //// scrolled
   // Scroll
   useEffect(() => {
     window.onscroll = function () {
       if (window.scrollY > 50) setScrolled(true);
-      else {
-        setScrolled(false);
-      }
+      else setScrolled(false);
     };
   }, [window.scrollY]);
+
+  //// mobileNavbar
+  // innerWidth
+  useEffect(() => {
+    // when page loaded
+    if (window.innerWidth >= 900) {
+      setMobileNavbar(false);
+      setNavOpen(true);
+    } else {
+      setMobileNavbar(true);
+      setNavOpen(false);
+    }
+
+    // when resizing window
+    window.onresize = function () {
+      if (window.innerWidth >= 900) {
+        setMobileNavbar(false);
+        setNavOpen(true);
+      } else {
+        setMobileNavbar(true);
+        setNavOpen(false);
+      }
+    };
+  }, [window.innerWidth]);
 
   return (
     <header className={`header ${scrolled ? "header-scrolled" : ""}`}>
@@ -43,8 +68,15 @@ export default function Header() {
         navOpen={navOpen}
         onNavBtnClick={handleNavToggle}
         scrolled={scrolled}
+        mobileNavbar={mobileNavbar}
       />
-      <Nav navOpen={navOpen} onNavOverlayClick={handleNavOverlayClick} />
+      {mobileNavbar && (
+        <Nav
+          navOpen={navOpen}
+          onNavOverlayClick={handleNavOverlayClick}
+          mobileNavbar={mobileNavbar}
+        />
+      )}
     </header>
   );
 }

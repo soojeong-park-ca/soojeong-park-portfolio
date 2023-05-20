@@ -1,13 +1,13 @@
 import { NavLink } from "react-router-dom";
 
-export default function Nav({ navOpen, onNavOverlayClick }) {
+export default function Nav({ navOpen, onNavOverlayClick, mobileNavbar }) {
   return (
     <>
       <div
         className={`nav-overlay ${!navOpen ? "nav-overlay--closed" : ""}`}
         onClick={onNavOverlayClick}
       ></div>
-      <nav className={`nav ${!navOpen ? "nav--closed" : ""}`}>
+      <nav className={`nav ${mobileNavbar && !navOpen ? "nav--closed" : ""}`}>
         <NavLink
           to="."
           className={({ isActive }) => (isActive ? "nav--active" : "")}

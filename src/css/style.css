@@ -362,6 +362,23 @@ body {
   transition: all 0.15s ease;
 }
 
+.navbar--desktop .nav-overlay {
+  display: none;
+}
+.navbar--desktop .nav {
+  position: static;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0;
+}
+.navbar--desktop .nav a {
+  width: 4rem;
+  padding: 0;
+  text-align: center;
+}
+
 .project__text {
   grid-row: 2/3;
 }
