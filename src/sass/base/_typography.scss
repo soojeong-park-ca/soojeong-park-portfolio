@@ -74,16 +74,6 @@ body {
     font-weight: 500;
     line-height: 1.4;
   }
-
-  .btn--to-contact {
-    text-align: center;
-
-    @include m.btn-hover {
-      &:hover {
-        color: v.$color-text-dark-gray;
-      }
-    }
-  }
 }
 
 // SectionSummary
@@ -97,24 +87,21 @@ body {
   &__title {
     font-size: 1.875rem;
   }
-}
 
-.btn--to-contact {
-  text-decoration: none;
-  font-family: inherit;
-  font-size: 1.5rem;
-  color: v.$color-text-dark-gray;
-
-  h4 {
+  &__contact-link {
+    text-decoration: none;
     font-family: inherit;
-    font-weight: 700;
-    font-size: 2rem;
-    text-align: left;
+    color: v.$color-text-dark-gray;
+    font-size: 1.5rem;
   }
 
-  @include m.btn-hover {
-    &:hover {
-      color: v.$color-gray-1;
+  a {
+    transition: all 0.15s ease;
+
+    @include m.btn-hover {
+      &:hover {
+        color: v.$color-gray-3;
+      }
     }
   }
 }
@@ -126,6 +113,23 @@ body {
   @include m.btn-hover {
     &:hover {
       color: v.$color-gray-1;
+    }
+  }
+}
+
+////////////////////////////////////////////////
+//////// Buttons
+.btn--link {
+  text-decoration: none;
+  font-family: inherit;
+  color: v.$color-text-dark-gray;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+
+  @include m.btn-hover {
+    &:hover {
+      color: v.$color-text-dark-gray;
     }
   }
 }

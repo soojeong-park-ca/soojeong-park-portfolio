@@ -19,7 +19,7 @@ export default function Hero() {
         </div>
 
         <div className="hero__contact">
-          <Link to="contact" className="btn--to-contact">
+          <Link to="contact" className="btn--link">
             Get in touch
           </Link>
         </div>

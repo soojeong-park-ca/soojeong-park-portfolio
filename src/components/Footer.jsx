@@ -10,8 +10,8 @@ export default function Footer() {
             <br />
             Let's work together.
           </h4>
-          <Link to="contact" className="btn--to-contact">
-            Get in touch
+          <Link to="contact" className="footer__contact-link">
+            Get in touch &rarr;
           </Link>
         </div>
         <div className="footer__contact">
