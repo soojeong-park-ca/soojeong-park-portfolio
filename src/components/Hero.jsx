@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
-    <section id="section__hero" className="container section__hero">
-      <div className="hero">
+    <section id="section__hero" className="section__hero">
+      <div className="hero container">
         <div className="hero__title">
           <h1>
             Hi, my name is <span>Soojeong Park</span> and I'm a{" "}
