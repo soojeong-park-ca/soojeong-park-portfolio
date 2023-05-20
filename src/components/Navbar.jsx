@@ -31,9 +31,8 @@ export default function Navbar({
     <div className={`navbar ${scrolled ? "navbar-scrolled" : ""}`}>
       <div className="container nav-container">
         <Link to="/" className="logo">
-          <h4 className="logo__text">
-            <Logo />
-          </h4>
+          <Logo />
+          <h4 className="logo__text">dev</h4>
         </Link>
 
         {mobileNavbar ? displayMobileNavbar : displayDesktopNavbar}

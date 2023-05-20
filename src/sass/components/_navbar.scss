@@ -23,6 +23,16 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h4 {
+      margin-left: -5px;
+    }
+  }
 }
 
 .btn--menu-container {
