@@ -42,6 +42,12 @@ li {
   word-break: break-word;
 }
 
+section {
+  width: 100%;
+  max-width: 90rem;
+  height: fit-content;
+}
+
 html {
   font-family: sans-serif;
 }
@@ -204,11 +210,20 @@ body {
 }
 
 .section__hero {
-  height: fit-content;
   background: linear-gradient(135deg, #ff8080, #ffa366, #ffd699);
   background-size: 400% 400%;
   animation: Gradient 4s ease infinite;
   padding-block: 8rem;
+}
+@media screen and (min-width: 43em) {
+  .section__hero {
+    animation: Gradient 7s ease infinite;
+  }
+}
+@media screen and (min-width: 56.25em) {
+  .section__hero {
+    animation: Gradient 10s ease infinite;
+  }
 }
 
 .hero {
@@ -227,6 +242,31 @@ body {
 @media screen and (hover: hover), screen and (pinter: fine) {
   .hero .btn--to-contact:hover {
     transform: translate(1px, 2px);
+  }
+}
+@media screen and (min-width: 43em) {
+  .hero .btn--to-contact {
+    width: 13.125rem;
+    border-radius: 20px;
+    padding: 1rem 2rem;
+  }
+}
+@media screen and (min-width: 56.25em) {
+  .hero {
+    grid-template-columns: 3fr 2fr;
+    column-gap: 2rem;
+  }
+  .hero__title {
+    grid-column: 1/2;
+  }
+  .hero__subtitle {
+    grid-column: 2/3;
+  }
+  .hero__subtitle h4 {
+    padding-block: 1rem;
+  }
+  .hero__contact {
+    grid-column: 1/-1;
   }
 }
 
@@ -268,7 +308,7 @@ body {
 
 .nav a {
   width: 100%;
-  max-width: 71.25rem;
+  max-width: 90rem;
   padding: 1.25rem;
   transition: all 0.15s ease;
 }
@@ -300,7 +340,7 @@ body {
 
 .nav-container {
   width: 100%;
-  max-width: 71.25rem;
+  max-width: 90rem;
   display: flex;
   flex-direction: row;
   align-items: center;

@@ -35,3 +35,9 @@ a,
 li {
   word-break: break-word;
 }
+
+section {
+  width: 100%;
+  max-width: 90rem;
+  height: fit-content;
+}

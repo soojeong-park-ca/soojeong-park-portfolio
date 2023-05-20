@@ -2,13 +2,20 @@
 @use "../abstracts/mixins" as m;
 
 .section__hero {
-  height: fit-content;
   // height: calc(100vh - 100px); // viewport height minus header height
   background: linear-gradient(135deg, #ff8080, #ffa366, #ffd699);
   background-size: 400% 400%;
   animation: Gradient 4s ease infinite;
 
   padding-block: 8rem;
+
+  @include m.respondMin(688px) {
+    animation: Gradient 7s ease infinite;
+  }
+
+  @include m.respondMin(900px) {
+    animation: Gradient 10s ease infinite;
+  }
 }
 
 .hero {
@@ -29,6 +36,36 @@
       &:hover {
         transform: translate(1px, 2px);
       }
+    }
+  }
+
+  @include m.respondMin(688px) {
+    .btn--to-contact {
+      width: 13.125rem;
+
+      border-radius: 20px;
+      padding: 1rem 2rem;
+    }
+  }
+
+  @include m.respondMin(900px) {
+    grid-template-columns: 3fr 2fr;
+    column-gap: 2rem;
+
+    &__title {
+      grid-column: 1 / 2;
+    }
+
+    &__subtitle {
+      grid-column: 2 / 3;
+
+      h4 {
+        padding-block: 1rem;
+      }
+    }
+
+    &__contact {
+      grid-column: 1 / -1;
     }
   }
 }

@@ -4,8 +4,10 @@ import ProjectItem from "./ProjectItem";
 
 import { projectsData } from "../projectsData";
 
-export default function SectionAbout() {
-  const projects = projectsData.map(item => <ProjectItem projectInfo={item} />);
+export default function Summary() {
+  const projects = projectsData.map(item => (
+    <ProjectItem key={item.id} projectInfo={item} />
+  ));
 
   return (
     <section id="section__summary" className="container section__summary">
