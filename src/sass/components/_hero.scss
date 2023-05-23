@@ -27,21 +27,6 @@
 
   padding-block: 8rem;
 
-  // .btn--to-contact {
-  //   width: 100%;
-  //   background-color: transparent;
-
-  //   border: 1px solid v.$color-text-dark-gray;
-  //   border-radius: 16px;
-  //   padding: 0.5rem 1rem;
-
-  //   @include m.btn-hover {
-  //     &:hover {
-  //       transform: translate(1px, 2px);
-  //     }
-  //   }
-  // }
-
   @include m.respondMin(688px) {
     .btn--to-contact {
       width: 13.125rem;

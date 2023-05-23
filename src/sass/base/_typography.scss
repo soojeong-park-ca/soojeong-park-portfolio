@@ -54,7 +54,7 @@ body {
 }
 
 ////////////////////////////////////////////////
-//////// Home
+//////// Home page
 // Hero
 .hero {
   h1 {
@@ -77,8 +77,31 @@ body {
 }
 
 // SectionSummary
-.section__title {
-  font-size: 1.875rem;
+.summary {
+  &__title {
+    @include m.content-title;
+  }
+
+  &__text {
+    @include m.content-text;
+  }
+}
+
+////////////////////////////////////////////////
+//////// About page
+// About me
+.about-container {
+  h1 {
+    @include m.content-title;
+  }
+}
+
+.about {
+  &__content {
+    p {
+      @include m.content-text;
+    }
+  }
 }
 
 ////////////////////////////////////////////////

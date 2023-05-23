@@ -1,4 +1,5 @@
 @use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
 
 *,
 *::before,
@@ -21,6 +22,12 @@ body {
   overscroll-behavior: none; // stops the body from bouncing
 
   background-color: v.$color-bg-white; // TEMP
+
+  @include m.respondMin(900px) {
+    .btn--link {
+      width: 15rem;
+    }
+  }
 }
 
 h1,

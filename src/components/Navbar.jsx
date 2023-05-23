@@ -30,7 +30,7 @@ export default function Navbar({
   return (
     <div className={`navbar ${scrolled ? "navbar-scrolled" : ""}`}>
       <div className="container nav-container">
-        <Link to="/" className="logo">
+        <Link to="/" onClick={() => scrollTo(top)} className="logo">
           <Logo />
           <h4 className="logo__text">dev</h4>
         </Link>

@@ -1,3 +1,5 @@
+@use "./variables" as v;
+
 @mixin btn-hover {
   @media screen and (hover: hover), screen and (pinter: fine) {
     @content;
@@ -7,6 +9,30 @@
 @mixin underline {
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+
+@mixin content-title {
+  font-family: inherit;
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 1.05;
+  color: inherit;
+}
+
+@mixin content-text {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: v.$color-gray-1;
+}
+
+@mixin transparent-btn {
+  width: 100%;
+  display: inline-block;
+  background-color: transparent;
+
+  border: 1px solid v.$color-text-dark-gray;
+  border-radius: 16px;
+  padding: 0.5rem 1rem;
 }
 
 // MEDIA QUERY MANAGER

@@ -1,0 +1,29 @@
+.about-container {
+  margin-block: 3rem 2rem;
+
+  h1 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.about {
+  &__skills {
+    margin-bottom: 3rem;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+
+    img {
+      width: 100%;
+      border-radius: 8px;
+      margin-block: 0.5rem;
+    }
+  }
+}
+
+// .skills-content {
+// }

@@ -1,24 +1,69 @@
-.section {
-  &__summary {
-    margin-block: 7rem 5rem;
-  }
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+.section__summary {
+  margin-block: 7rem 2rem;
 }
 
 .summary {
-  &__title {
+  &__about,
+  &__projects {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+    justify-content: center;
+    gap: 2rem;
+  }
 
-    margin-bottom: 3rem;
+  &__about {
+    margin-bottom: 6rem;
   }
 
   &__body {
     margin-bottom: 3rem;
+
+    img {
+      width: 100%;
+      max-width: 20rem;
+      border-radius: 8px;
+    }
+  }
+
+  &__text {
+    grid-row: 1 / 2;
+  }
+
+  &__about &__body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto;
+    row-gap: 2rem;
+    column-gap: 0;
+    margin-bottom: 0;
+
+    @include m.respondMin(900px) {
+      grid-template-columns: 1fr auto;
+      grid-template-rows: 1fr auto;
+      row-gap: 0;
+      column-gap: 2rem;
+
+      &__text {
+        grid-column: 1 / 2;
+      }
+
+      &__body {
+        img {
+          grid-column: 2 / 3;
+        }
+      }
+    }
   }
 }
 
 .project__list {
   grid-row-gap: 3.75rem;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
 }
