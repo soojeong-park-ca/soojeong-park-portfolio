@@ -593,6 +593,10 @@ $color-green-4: #85aa91;
 .summary__about {
   margin-bottom: 6rem;
 }
+.summary__skills {
+  background-color: #ffd699;
+  margin-bottom: 6rem;
+}
 .summary__body {
   margin-bottom: 3rem;
 }
@@ -628,6 +632,44 @@ $color-green-4: #85aa91;
   .summary__about .summary__body__body img {
     grid-column: 2/3;
   }
+}
+
+.skills__container {
+  padding-block: 3rem;
+}
+.skills__container:first-child {
+  padding-left: 3rem;
+}
+
+.reel {
+  display: grid;
+  gap: 3rem;
+  grid-auto-flow: column;
+  grid-auto-columns: auto;
+  align-items: center;
+  justify-content: start;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 3rem;
+}
+
+.reel > * {
+  scroll-snap-align: start;
+}
+
+.skill {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+}
+.skill figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .project__list {
@@ -680,12 +722,17 @@ $color-green-4: #85aa91;
   flex-wrap: wrap;
 }
 .skills figure {
-  width: 5.3rem;
+  width: 5.2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+}
+@media screen and (min-width: 43em) {
+  .skills {
+    gap: 1.5rem;
+  }
 }
 @media screen and (min-width: 56.25em) {
   .skills {

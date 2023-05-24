@@ -18,6 +18,11 @@
     margin-bottom: 6rem;
   }
 
+  &__skills {
+    background-color: v.$color-yellow;
+    margin-bottom: 6rem;
+  }
+
   &__body {
     margin-bottom: 3rem;
 
@@ -60,6 +65,48 @@
         }
       }
     }
+  }
+}
+
+.skills__container {
+  padding-block: 3rem;
+
+  &:first-child {
+    padding-left: 3rem;
+  }
+}
+
+.reel {
+  display: grid;
+  gap: 3rem;
+  grid-auto-flow: column;
+  // grid-auto-columns: 30%;
+  grid-auto-columns: auto;
+  align-items: center;
+  justify-content: start;
+
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 3rem;
+}
+.reel > * {
+  scroll-snap-align: start;
+}
+
+.skill {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.5rem;
+
+  figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
   }
 }
 
