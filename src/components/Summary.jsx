@@ -44,98 +44,100 @@ export default function Summary() {
         </div>
 
         <div className="summary__skills">
-          <div className="container skills__container reel">
-            <div className="skill">
-              <figure>
-                <img
-                  className="skill-logo"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg"
-                  alt="HTML5 Logo"
-                />
-                <figcaption>HTML5</figcaption>
-              </figure>
-            </div>
-            <div className="skill">
-              <figure>
-                <img
-                  className="skill-logo"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"
-                  alt="CSS3 Logo"
-                />
-                <figcaption>CSS3</figcaption>
-              </figure>
-            </div>
-            <div className="skill">
-              <figure>
-                <img
-                  className="skill-logo"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                  alt="JavaScript Logo"
-                />
-                <figcaption>JavaScript</figcaption>
-              </figure>
-            </div>
-            <div className="skill">
-              <figure>
-                <img
-                  className="skill-logo"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                  alt="React Logo"
-                />
-                <figcaption>React</figcaption>
-              </figure>
-            </div>
-            <div className="skill">
-              <figure>
-                <img
-                  className="skill-logo"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
-                  alt="Sass Logo"
-                />
-                <figcaption>Sass</figcaption>
-              </figure>
-            </div>
-            <div className="skill">
-              <figure>
-                <img
-                  className="skill-logo"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg"
-                  alt="Git Logo"
-                />
-                <figcaption>Git</figcaption>
-              </figure>
-            </div>
-            <div className="skill">
-              <figure>
-                <img
-                  className="skill-logo"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
-                  alt="TailwindCSS Logo"
-                />
-                <figcaption>TailwindCSS</figcaption>
-              </figure>
-            </div>
-            <div className="skill">
-              <figure className="skill-learning">
-                <img
-                  className="skill-logo"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
-                  alt="Redux Logo"
-                />
-                <figcaption>
-                  Redux
-                  <br />
-                  (learning)
-                </figcaption>
-              </figure>
-            </div>
-            <div className="skill">
-              <figure>
-                <ResponsiveIcon />
-                <figcaption style={{ textAlign: "center" }}>
-                  Responsive
-                </figcaption>
-              </figure>
+          <div className="container skills__container">
+            <div className="reel">
+              <div className="skill">
+                <figure>
+                  <img
+                    className="skill-logo"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg"
+                    alt="HTML5 Logo"
+                  />
+                  <figcaption>HTML5</figcaption>
+                </figure>
+              </div>
+              <div className="skill">
+                <figure>
+                  <img
+                    className="skill-logo"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"
+                    alt="CSS3 Logo"
+                  />
+                  <figcaption>CSS3</figcaption>
+                </figure>
+              </div>
+              <div className="skill">
+                <figure>
+                  <img
+                    className="skill-logo"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                    alt="JavaScript Logo"
+                  />
+                  <figcaption>JavaScript</figcaption>
+                </figure>
+              </div>
+              <div className="skill">
+                <figure>
+                  <img
+                    className="skill-logo"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                    alt="React Logo"
+                  />
+                  <figcaption>React</figcaption>
+                </figure>
+              </div>
+              <div className="skill">
+                <figure>
+                  <img
+                    className="skill-logo"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
+                    alt="Sass Logo"
+                  />
+                  <figcaption>Sass</figcaption>
+                </figure>
+              </div>
+              <div className="skill">
+                <figure>
+                  <img
+                    className="skill-logo"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg"
+                    alt="Git Logo"
+                  />
+                  <figcaption>Git</figcaption>
+                </figure>
+              </div>
+              <div className="skill">
+                <figure>
+                  <img
+                    className="skill-logo"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+                    alt="TailwindCSS Logo"
+                  />
+                  <figcaption>TailwindCSS</figcaption>
+                </figure>
+              </div>
+              <div className="skill">
+                <figure className="skill-learning">
+                  <img
+                    className="skill-logo"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
+                    alt="Redux Logo"
+                  />
+                  <figcaption>
+                    Redux
+                    <br />
+                    (learning)
+                  </figcaption>
+                </figure>
+              </div>
+              <div className="skill">
+                <figure>
+                  <ResponsiveIcon />
+                  <figcaption style={{ textAlign: "center" }}>
+                    Responsive
+                  </figcaption>
+                </figure>
+              </div>
             </div>
           </div>
         </div>
