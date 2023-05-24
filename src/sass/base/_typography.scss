@@ -89,9 +89,32 @@ body {
 
 ////////////////////////////////////////////////
 //////// About page
-// About me
+// My skills
+.skills {
+  figcaption {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 1rem;
+    color: v.$color-gray-1;
+  }
+}
+
+.skill-learning {
+  figcaption {
+    color: v.$color-gray-4;
+    text-align: center;
+  }
+}
+
+// My story
 .about-container {
   h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.05;
+  }
+
+  h2 {
     @include m.content-title;
   }
 }

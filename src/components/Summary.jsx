@@ -19,16 +19,20 @@ export default function Summary() {
         <div className="summary__about">
           <h2 className="summary__title">A little bit about me</h2>
           <div className="summary__body">
-            <p className="summary__text">
-              I am a meticulous and driven frontend web developer from sunny
-              California. My expertise lies in transforming designs into
-              pixel-perfect, responsive, and functional websites. I bring
-              valuable collaboration, communication, and detail-oriented skills
-              honed through my teaching background. Fueled by my love and
-              passion for creating websites, I am eager to seek opportunities
-              where I can utilize my skills and make a meaningful impact in the
-              role of a web developer.
-            </p>
+            <div className="summary__text">
+              <p>
+                I am a meticulous and driven frontend web developer from sunny
+                California. My expertise lies in transforming designs into
+                pixel-perfect, responsive, and functional websites. I bring
+                valuable collaboration, communication, and detail-oriented
+                skills from my background in teaching.
+              </p>
+              <p>
+                Fueled by my love and passion for creating websites, I am eager
+                to seek opportunities where I can utilize my skills and make a
+                meaningful impact in the role of a web developer.
+              </p>
+            </div>
             <div className="img-container">
               <img src={myImg} alt="Soojeong Park" />
             </div>

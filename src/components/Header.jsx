@@ -75,6 +75,7 @@ export default function Header() {
           navOpen={navOpen}
           onNavOverlayClick={handleNavOverlayClick}
           mobileNavbar={mobileNavbar}
+          setNavOpen={setNavOpen}
         />
       )}
     </header>

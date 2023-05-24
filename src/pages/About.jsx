@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 
+import ResponsiveIcon from "../components/ResponsiveIcon";
 import teachingImg1 from "../assets/images/teaching-1.png";
 import teachingImg2 from "../assets/images/teaching-2.png";
 
@@ -8,12 +9,99 @@ export default function About() {
 
   return (
     <main className="container about-container">
+      <h1>About Me</h1>
       <div className="about__skills">
-        <h1>My skills</h1>
-        <div className="about__content skills-content"></div>
+        <h2>My skills</h2>
+        <div className="about__content skills-content">
+          <div className="skills">
+            <figure>
+              <img
+                className="skill-logo"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg"
+                alt="HTML5 Logo"
+              />
+              <figcaption>HTML5</figcaption>
+            </figure>
+            <figure>
+              <img
+                className="skill-logo"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"
+                alt="CSS3 Logo"
+              />
+              <figcaption>CSS3</figcaption>
+            </figure>
+            <figure>
+              <img
+                className="skill-logo"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                alt="JavaScript Logo"
+              />
+              <figcaption>JavaScript</figcaption>
+            </figure>
+            <figure>
+              <img
+                className="skill-logo"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                alt="React Logo"
+              />
+              <figcaption>React</figcaption>
+            </figure>
+            <figure>
+              <img
+                className="skill-logo"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
+                alt="Sass Logo"
+              />
+              <figcaption>Sass</figcaption>
+            </figure>
+            <figure>
+              <img
+                className="skill-logo"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg"
+                alt="Git Logo"
+              />
+              <figcaption>Git</figcaption>
+            </figure>
+            <figure>
+              <img
+                className="skill-logo"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+                alt="TailwindCSS Logo"
+              />
+              <figcaption>TailwindCSS</figcaption>
+            </figure>
+            <figure className="skill-learning">
+              <img
+                className="skill-logo"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
+                alt="Redux Logo"
+              />
+              <figcaption>
+                Redux
+                <br />
+                (learning)
+              </figcaption>
+            </figure>
+            <figure>
+              <ResponsiveIcon />
+              <figcaption style={{ textAlign: "center" }}>
+                Responsive
+              </figcaption>
+            </figure>
+          </div>
+
+          {/* <div className="skills">
+            <figure>
+              <ResponsiveIcon />
+              <figcaption style={{ marginTop: ".5rem", textAlign: "center" }}>
+                Responsive
+              </figcaption>
+            </figure>
+          </div> */}
+        </div>
       </div>
       <div className="about__story">
-        <h1>My story</h1>
+        <h2>My story</h2>
         <div className="about__content story-content">
           <p>
             Hello and welcome to my portfolio website! My name is Soojeong Park
@@ -29,7 +117,9 @@ export default function About() {
             elementary students in California. Little did I know that this
             experience would lead me down an unexpected path.
           </p>
-          <img src={teachingImg1} alt="Soojeong teaching in South Korea" />
+          <div className="img-container">
+            <img src={teachingImg1} alt="Soojeong teaching in South Korea" />
+          </div>
           <p>
             In 2021, I had an incredible encounter with one of my students who
             taught the entire class about JavaScript. Witnessing their passion
@@ -48,7 +138,9 @@ export default function About() {
             continue to learn, build, and evolve towards my goal of becoming a
             frontend web developer.
           </p>
-          <img src={teachingImg2} alt="Soojeong teaching in California" />
+          <div className="img-container">
+            <img src={teachingImg2} alt="Soojeong teaching in California" />
+          </div>
           <p>
             While my background may not be traditionally computer
             science-related, my experience as a teacher has provided me with

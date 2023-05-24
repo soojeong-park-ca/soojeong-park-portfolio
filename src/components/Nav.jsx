@@ -1,6 +1,15 @@
 import { NavLink } from "react-router-dom";
 
-export default function Nav({ navOpen, onNavOverlayClick, mobileNavbar }) {
+export default function Nav({
+  navOpen,
+  onNavOverlayClick,
+  mobileNavbar,
+  setNavOpen,
+}) {
+  const handleNavLinkClick = () => {
+    setNavOpen(false);
+  };
+
   return (
     <>
       <div
@@ -11,24 +20,28 @@ export default function Nav({ navOpen, onNavOverlayClick, mobileNavbar }) {
         <NavLink
           to="."
           className={({ isActive }) => (isActive ? "nav--active" : "")}
+          onClick={mobileNavbar && handleNavLinkClick}
         >
           Home
         </NavLink>
         <NavLink
           to="about"
           className={({ isActive }) => (isActive ? "nav--active" : "")}
+          onClick={mobileNavbar && handleNavLinkClick}
         >
           About
         </NavLink>
         <NavLink
           to="projects"
           className={({ isActive }) => (isActive ? "nav--active" : "")}
+          onClick={mobileNavbar && handleNavLinkClick}
         >
           Projects
         </NavLink>
         <NavLink
           to="contact"
           className={({ isActive }) => (isActive ? "nav--active" : "")}
+          onClick={mobileNavbar && handleNavLinkClick}
         >
           Contact
         </NavLink>

@@ -1,14 +1,21 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
 .about-container {
-  margin-block: 3rem 2rem;
+  margin-block: 7rem 2rem;
 
   h1 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  h2 {
+    margin-bottom: 2rem;
   }
 }
 
 .about {
   &__skills {
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
   }
 
   &__content {
@@ -19,11 +26,34 @@
 
     img {
       width: 100%;
+      max-width: 20rem;
       border-radius: 8px;
-      margin-block: 0.5rem;
     }
   }
 }
 
-// .skills-content {
-// }
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+
+  figure {
+    width: 5.3rem;
+    // height: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  @include m.respondMin(900px) {
+    gap: 2.5rem;
+  }
+}
+
+.skill-logo {
+  height: 5rem;
+}
