@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
 
 export default function Footer() {
+  function handleFooterScrollToTop() {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }
+
   return (
     <footer className="footer">
       <div className="container">
@@ -10,7 +14,11 @@ export default function Footer() {
             <br />
             Let's work together.
           </h4>
-          <Link to="contact" className="footer__contact-link">
+          <Link
+            to="contact"
+            className="footer__contact-link"
+            onClick={handleFooterScrollToTop}
+          >
             Get in touch &rarr;
           </Link>
         </div>

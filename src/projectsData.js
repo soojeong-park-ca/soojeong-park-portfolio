@@ -26,8 +26,8 @@ export const projectsData = [
     description: `A responsive single page application for my portfolio website (you're currently on)`,
     imageUrl:
       "https://drive.google.com/uc?export=view&id=1AuBqw_UuPkkOa5DTHqVVt3rM3XGV1URa",
-    githubUrl: "",
-    liveSiteUrl: "",
+    githubUrl: "https://github.com/soojeong-park-ca/soojeong-park-portfolio",
+    liveSiteUrl: "https://soojeong-park.netlify.app/",
     tools: [
       "React",
       "React Router",

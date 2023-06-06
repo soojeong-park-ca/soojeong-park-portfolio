@@ -177,6 +177,16 @@ body {
 }
 
 ////////////////////////////////////////////////
+//////// Contact
+.contact-form {
+  input,
+  textarea {
+    font-family: inherit;
+    font-size: inherit;
+  }
+}
+
+////////////////////////////////////////////////
 //////// Footer
 .footer {
   &__title {

@@ -65,7 +65,7 @@
     margin-bottom: 3rem;
 
     .img-container {
-      max-width: 20rem;
+      width: fit-content;
       border: 3px solid v.$color-text-dark-gray;
       border-radius: 10px;
       margin: 0 auto;
@@ -73,6 +73,7 @@
 
     img {
       width: 100%;
+      max-width: 20rem;
       border-radius: 8px;
     }
   }
@@ -113,7 +114,7 @@
 
   @include m.respondMin(v.$laptop-s) {
     &__about {
-      &__title {
+      &-title {
         flex-direction: row;
       }
     }
