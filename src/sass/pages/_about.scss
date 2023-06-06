@@ -2,7 +2,7 @@
 @use "../abstracts/mixins" as m;
 
 .about-container {
-  margin-block: 7rem 2rem;
+  margin-block: 5rem 2rem;
 
   h1 {
     margin-bottom: 3rem;
@@ -15,7 +15,12 @@
 
 .about {
   &__skills {
-    margin-bottom: 5rem;
+    background-color: v.$color-yellow;
+    padding-block: 3rem;
+  }
+
+  &__story {
+    padding-block: 3rem;
   }
 
   &__content {
