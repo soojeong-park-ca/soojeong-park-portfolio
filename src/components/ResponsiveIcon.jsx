@@ -1,4 +1,4 @@
-export default function ResponsivIcon() {
+export default function ResponsiveIcon() {
   return (
     <div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" height="80">

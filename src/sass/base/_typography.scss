@@ -15,6 +15,11 @@ body {
   font-weight: 400;
 }
 
+.wip {
+  font-size: 0.8rem;
+  color: v.$color-gray-2;
+}
+
 ////////////////////////////////////////////////
 //////// Navbar
 .logo {
@@ -42,10 +47,8 @@ body {
   opacity: 0.8;
   font-weight: 700;
 
-  @include m.btn-hover {
-    &:hover {
-      opacity: 1;
-    }
+  &:hover {
+    opacity: 1;
   }
 }
 
@@ -84,6 +87,39 @@ body {
 
   &__text {
     @include m.content-text;
+  }
+}
+
+//-- Projects
+.project-item {
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  &__links {
+    a:link,
+    a:visited {
+      color: v.$color-yellow;
+    }
+  }
+
+  &__tools {
+    &-title {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    &-list {
+      li {
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  &__description {
+    line-height: 1.5;
   }
 }
 
@@ -144,10 +180,8 @@ body {
   a {
     transition: all 0.15s ease;
 
-    @include m.btn-hover {
-      &:hover {
-        color: v.$color-gray-3;
-      }
+    &:hover {
+      color: v.$color-gray-3;
     }
   }
 }
@@ -156,10 +190,8 @@ body {
   text-decoration: none;
   color: v.$color-text-dark-gray;
 
-  @include m.btn-hover {
-    &:hover {
-      color: v.$color-gray-1;
-    }
+  &:hover {
+    color: v.$color-gray-1;
   }
 }
 
@@ -173,9 +205,7 @@ body {
   font-weight: 500;
   text-align: center;
 
-  @include m.btn-hover {
-    &:hover {
-      color: v.$color-text-dark-gray;
-    }
+  &:hover {
+    color: v.$color-text-dark-gray;
   }
 }

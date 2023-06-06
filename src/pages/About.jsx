@@ -17,18 +17,10 @@ export default function About() {
             <figure>
               <img
                 className="skill-logo"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg"
-                alt="HTML5 Logo"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                alt="React Logo"
               />
-              <figcaption>HTML5</figcaption>
-            </figure>
-            <figure>
-              <img
-                className="skill-logo"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"
-                alt="CSS3 Logo"
-              />
-              <figcaption>CSS3</figcaption>
+              <figcaption>React</figcaption>
             </figure>
             <figure>
               <img
@@ -37,14 +29,6 @@ export default function About() {
                 alt="JavaScript Logo"
               />
               <figcaption>JavaScript</figcaption>
-            </figure>
-            <figure>
-              <img
-                className="skill-logo"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                alt="React Logo"
-              />
-              <figcaption>React</figcaption>
             </figure>
             <figure>
               <img
@@ -61,6 +45,22 @@ export default function About() {
                 alt="Git Logo"
               />
               <figcaption>Git</figcaption>
+            </figure>
+            <figure>
+              <img
+                className="skill-logo"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg"
+                alt="HTML5 Logo"
+              />
+              <figcaption>HTML5</figcaption>
+            </figure>
+            <figure>
+              <img
+                className="skill-logo"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"
+                alt="CSS3 Logo"
+              />
+              <figcaption>CSS3</figcaption>
             </figure>
             <figure>
               <img

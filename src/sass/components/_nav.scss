@@ -56,10 +56,8 @@
   padding: 1.25rem;
   transition: all 0.15s ease;
 
-  @include m.btn-hover {
-    &:hover {
-      @include m.underline;
-    }
+  &:hover {
+    @include m.underline;
   }
 }
 

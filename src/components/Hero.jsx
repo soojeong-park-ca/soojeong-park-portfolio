@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -13,15 +13,15 @@ export default function Hero() {
 
         <div className="hero__subtitle">
           <h4>
-            I help transform your digital vision into cutting-edge,
-            user-friendly websites.
+            I help transform your digital vision into pixel-perfect, responsive
+            websites.
           </h4>
         </div>
 
         <div className="hero__contact">
-          <Link to="contact" className="btn--link">
-            Get in touch
-          </Link>
+          <a href="#projects" className="btn--link">
+            See my projects
+          </a>
         </div>
       </div>
     </section>

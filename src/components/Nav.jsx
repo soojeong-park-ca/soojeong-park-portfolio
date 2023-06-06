@@ -1,13 +1,19 @@
 import { NavLink } from "react-router-dom";
+// import { NavHashLink } from "react-router-hash-link";
 
 export default function Nav({
   navOpen,
   onNavOverlayClick,
   mobileNavbar,
   setNavOpen,
+  hashLink,
 }) {
   const handleNavLinkClick = () => {
     setNavOpen(false);
+  };
+
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   };
 
   return (
@@ -20,10 +26,14 @@ export default function Nav({
         <NavLink
           to="."
           className={({ isActive }) => (isActive ? "nav--active" : "")}
-          onClick={mobileNavbar && handleNavLinkClick}
+          onClick={() => {
+            handleScrollToTop();
+            mobileNavbar && handleNavLinkClick;
+          }}
         >
           Home
         </NavLink>
+
         <NavLink
           to="about"
           className={({ isActive }) => (isActive ? "nav--active" : "")}
@@ -31,13 +41,24 @@ export default function Nav({
         >
           About
         </NavLink>
-        <NavLink
+
+        {/* <NavLink
           to="projects"
           className={({ isActive }) => (isActive ? "nav--active" : "")}
           onClick={mobileNavbar && handleNavLinkClick}
         >
           Projects
-        </NavLink>
+        </NavLink> */}
+
+        {/* <NavHashLink
+          smooth
+          to={`/${hashLink}`}
+          // className={({ isActive }) => (isActive ? "nav--active" : "")}
+          onClick={mobileNavbar && handleNavLinkClick}
+        >
+          Projects
+        </NavHashLink> */}
+
         <NavLink
           to="contact"
           className={({ isActive }) => (isActive ? "nav--active" : "")}

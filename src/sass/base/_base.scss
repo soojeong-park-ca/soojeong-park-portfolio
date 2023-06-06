@@ -21,9 +21,9 @@ body {
   min-height: 100%;
   overscroll-behavior: none; // stops the body from bouncing
 
-  background-color: v.$color-bg-white; // TEMP
+  background-color: v.$color-bg-white;
 
-  @include m.respondMin(900px) {
+  @include m.respondMin(v.$laptop-s) {
     .btn--link {
       width: 15rem;
     }

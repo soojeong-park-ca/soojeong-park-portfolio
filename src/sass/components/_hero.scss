@@ -13,11 +13,11 @@
   background-size: 400% 400%;
   animation: Gradient 4s ease infinite;
 
-  @include m.respondMin(688px) {
+  @include m.respondMin(v.$tablet-l) {
     animation: Gradient 7s ease infinite;
   }
 
-  @include m.respondMin(900px) {
+  @include m.respondMin(v.$laptop-s) {
     animation: Gradient 10s ease infinite;
   }
 }
@@ -32,7 +32,7 @@
 
   padding-block: 8rem;
 
-  @include m.respondMin(688px) {
+  @include m.respondMin(v.$tablet-l) {
     .btn--to-contact {
       width: 13.125rem;
 
@@ -41,7 +41,7 @@
     }
   }
 
-  @include m.respondMin(900px) {
+  @include m.respondMin(v.$laptop-s) {
     grid-template-columns: 3fr 2fr;
     column-gap: 2rem;
 

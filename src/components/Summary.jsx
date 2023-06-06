@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import ResponsiveIcon from "./ResponsiveIcon";
@@ -8,8 +7,6 @@ import myImg from "../assets/images/pfp.png";
 import { projectsData } from "../projectsData";
 
 export default function Summary() {
-  useEffect(() => window.scrollTo(top), []);
-
   const projects = projectsData.map(item => (
     <ProjectItem key={item.id} projectInfo={item} />
   ));
@@ -50,20 +47,10 @@ export default function Summary() {
                 <figure>
                   <img
                     className="skill-logo"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg"
-                    alt="HTML5 Logo"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                    alt="React Logo"
                   />
-                  <figcaption>HTML5</figcaption>
-                </figure>
-              </div>
-              <div className="skill">
-                <figure>
-                  <img
-                    className="skill-logo"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"
-                    alt="CSS3 Logo"
-                  />
-                  <figcaption>CSS3</figcaption>
+                  <figcaption>React</figcaption>
                 </figure>
               </div>
               <div className="skill">
@@ -74,16 +61,6 @@ export default function Summary() {
                     alt="JavaScript Logo"
                   />
                   <figcaption>JavaScript</figcaption>
-                </figure>
-              </div>
-              <div className="skill">
-                <figure>
-                  <img
-                    className="skill-logo"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                    alt="React Logo"
-                  />
-                  <figcaption>React</figcaption>
                 </figure>
               </div>
               <div className="skill">
@@ -104,6 +81,26 @@ export default function Summary() {
                     alt="Git Logo"
                   />
                   <figcaption>Git</figcaption>
+                </figure>
+              </div>
+              <div className="skill">
+                <figure>
+                  <img
+                    className="skill-logo"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg"
+                    alt="HTML5 Logo"
+                  />
+                  <figcaption>HTML5</figcaption>
+                </figure>
+              </div>
+              <div className="skill">
+                <figure>
+                  <img
+                    className="skill-logo"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"
+                    alt="CSS3 Logo"
+                  />
+                  <figcaption>CSS3</figcaption>
                 </figure>
               </div>
               <div className="skill">
@@ -142,16 +139,16 @@ export default function Summary() {
           </div>
         </div>
 
-        <div className="container summary__projects">
+        <div id="projects" className="container summary__projects">
           <h2 className="summary__title">
             Take a peek at what I've been building
           </h2>
           <div className="summary__body">
             <div className="project__list grid-col-1">{projects}</div>
           </div>
-          <Link to="projects" className="btn--link btn--to-projects">
+          {/* <Link to="projects" className="btn--link btn--to-projects">
             see more &rarr;
-          </Link>
+          </Link> */}
         </div>
       </div>
     </section>
