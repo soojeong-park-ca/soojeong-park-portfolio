@@ -19,6 +19,7 @@ export default function Footer() {
             <a
               href="https://github.com/soojeong-park-ca"
               target="_blank"
+              rel="nonreferrer"
               className="btn--sns"
             >
               GitHub
@@ -26,6 +27,7 @@ export default function Footer() {
             <a
               href="https://www.linkedin.com/in/soojeong-park-ca/"
               target="_blank"
+              rel="nonreferrer"
               className="btn--sns"
             >
               LinkedIn

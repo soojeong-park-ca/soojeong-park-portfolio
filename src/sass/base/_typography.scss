@@ -88,6 +88,19 @@ body {
   &__text {
     @include m.content-text;
   }
+
+  &__resume {
+    a:link,
+    a:visited {
+      color: v.$color-yellow;
+    }
+  }
+}
+
+.gh-icon,
+.linkedin-icon {
+  font-size: 1.875rem;
+  color: v.$color-gray-1;
 }
 
 //-- Projects

@@ -24,6 +24,36 @@
 
   &__about {
     margin-bottom: 6rem;
+
+    &-title {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    // margin-left: auto;
+  }
+
+  &__resume {
+    a:link,
+    a:visited {
+      width: fit-content;
+      display: inline-block;
+      text-decoration: none;
+      background-color: v.$color-text-dark-gray;
+      border-radius: 5px;
+      padding: 0.5rem 1rem;
+      transition: all 0.15s ease;
+    }
+
+    a:hover {
+      background-color: v.$color-gray-3;
+    }
   }
 
   &__skills {
@@ -34,9 +64,15 @@
   &__body {
     margin-bottom: 3rem;
 
+    .img-container {
+      max-width: 20rem;
+      border: 3px solid v.$color-text-dark-gray;
+      border-radius: 10px;
+      margin: 0 auto;
+    }
+
     img {
       width: 100%;
-      max-width: 20rem;
       border-radius: 8px;
     }
   }
@@ -68,20 +104,19 @@
       }
 
       &__body {
-        img {
+        .img-container {
           grid-column: 2 / 3;
         }
       }
     }
   }
-}
 
-.skills__container {
-  // padding-block: 3rem;
-  // padding-block: 3rem;
-
-  &:first-child {
-    // padding-left: 3rem;
+  @include m.respondMin(v.$laptop-s) {
+    &__about {
+      &__title {
+        flex-direction: row;
+      }
+    }
   }
 }
 

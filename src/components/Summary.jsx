@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 import ResponsiveIcon from "./ResponsiveIcon";
 import ProjectItem from "./ProjectItem";
-import myImg from "../assets/images/pfp.png";
+import myImg from "../assets/images/pfp-2.png";
 
 import { projectsData } from "../projectsData";
 
@@ -15,7 +15,29 @@ export default function Summary() {
     <section id="section__summary" className="section__summary">
       <div className="summary">
         <div className="container summary__about">
-          <h2 className="summary__title">A little bit about me</h2>
+          <div className="summary__about-title">
+            <h2 className="summary__title">A little bit about me</h2>
+            <div className="summary__links">
+              <a
+                href="https://github.com/soojeong-park-ca"
+                target="_blank"
+                rel="nonreferrer"
+              >
+                <i className="fa-brands fa-github gh-icon"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/soojeong-park-ca/"
+                target="_blank"
+                rel="nonreferrer"
+              >
+                <i className="fa-brands fa-linkedin linkedin-icon"></i>
+              </a>
+            </div>
+            <div className="summary__resume">
+              <a href="#">Download resume</a>
+            </div>
+          </div>
+
           <div className="summary__body">
             <div className="summary__text">
               <p>
@@ -31,9 +53,11 @@ export default function Summary() {
                 meaningful impact in the role of a web developer.
               </p>
             </div>
+
             <div className="img-container">
               <img src={myImg} alt="Soojeong Park" />
             </div>
+
             <Link to="about" className="btn--summary btn--link">
               learn more &rarr;
             </Link>

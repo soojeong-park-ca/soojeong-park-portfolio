@@ -11,7 +11,7 @@ export const projectsData = [
     liveSiteUrl: "https://nomad-wheels.netlify.app/",
     tools: [
       "React",
-      "React Router 6",
+      "React Router Data API",
       "SASS(SCSS)",
       "Firebase",
       "Responsive",
@@ -30,7 +30,7 @@ export const projectsData = [
     liveSiteUrl: "",
     tools: [
       "React",
-      "React Router 6",
+      "React Router",
       "SASS(SCSS)",
       "Responsive",
       "Mobile-first",
@@ -64,7 +64,8 @@ export const projectsData = [
     id: "5",
     wip: false,
     title: "Multi-step Form",
-    description: "A responsive form for a fictional game subscription",
+    description:
+      "A responsive multi-step form built with vanilla JavaScript for a fictional game subscription",
     imageUrl:
       "https://drive.google.com/uc?export=view&id=1AgezTMLznewR6EILc4xOHmpSOm6tH6Cv",
     githubUrl: "https://github.com/soojeong-park-ca/multi-step-form",
