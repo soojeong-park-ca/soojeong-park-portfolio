@@ -146,9 +146,6 @@ export default function Summary() {
           <div className="summary__body">
             <div className="project__list grid-col-1">{projects}</div>
           </div>
-          {/* <Link to="projects" className="btn--link btn--to-projects">
-            see more &rarr;
-          </Link> */}
         </div>
       </div>
     </section>

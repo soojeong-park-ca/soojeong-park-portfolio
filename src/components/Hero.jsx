@@ -1,5 +1,3 @@
-// import { Link } from "react-router-dom";
-
 export default function Hero() {
   return (
     <section id="section__hero" className="section__hero">

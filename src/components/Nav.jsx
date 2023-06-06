@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-// import { NavHashLink } from "react-router-hash-link";
 
 export default function Nav({
   navOpen,
@@ -41,23 +40,6 @@ export default function Nav({
         >
           About
         </NavLink>
-
-        {/* <NavLink
-          to="projects"
-          className={({ isActive }) => (isActive ? "nav--active" : "")}
-          onClick={mobileNavbar && handleNavLinkClick}
-        >
-          Projects
-        </NavLink> */}
-
-        {/* <NavHashLink
-          smooth
-          to={`/${hashLink}`}
-          // className={({ isActive }) => (isActive ? "nav--active" : "")}
-          onClick={mobileNavbar && handleNavLinkClick}
-        >
-          Projects
-        </NavHashLink> */}
 
         <NavLink
           to="contact"
