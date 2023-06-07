@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import resumeFile from "/soojeong-park-resume-23.pdf";
+import resumeFile from "/soojeong-park-resume-2023.pdf";
 
 import ResponsiveIcon from "./ResponsiveIcon";
 import ProjectItem from "./ProjectItem";
