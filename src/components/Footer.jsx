@@ -25,6 +25,14 @@ export default function Footer() {
         <div className="footer__contact">
           <div className="sns-buttons">
             <a
+              href="mailto:soojeong.park.ca@gmail.com"
+              target="_blank"
+              rel="nonreferrer"
+              className="btn--sns"
+            >
+              Email
+            </a>
+            <a
               href="https://github.com/soojeong-park-ca"
               target="_blank"
               rel="nonreferrer"

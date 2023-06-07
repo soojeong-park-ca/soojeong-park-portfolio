@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import resumeFile from "/soojeong-park-resume-23.pdf";
 
 import ResponsiveIcon from "./ResponsiveIcon";
 import ProjectItem from "./ProjectItem";
@@ -34,7 +35,9 @@ export default function Summary() {
               </a>
             </div>
             <div className="summary__resume">
-              <a href="#">Download resume</a>
+              <Link to={resumeFile} download target="_blank" rel="nonreferrer">
+                Download resume
+              </Link>
             </div>
           </div>
 
