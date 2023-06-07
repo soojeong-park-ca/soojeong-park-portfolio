@@ -20,6 +20,13 @@ export default function Summary() {
             <h2 className="summary__title">A little bit about me</h2>
             <div className="summary__links">
               <a
+                href="mailto:soojeong.park.ca@gmail.com"
+                target="_blank"
+                rel="nonreferrer"
+              >
+                <i className="fa-solid fa-envelope email-icon"></i>
+              </a>
+              <a
                 href="https://github.com/soojeong-park-ca"
                 target="_blank"
                 rel="nonreferrer"
