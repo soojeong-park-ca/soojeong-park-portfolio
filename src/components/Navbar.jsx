@@ -5,6 +5,7 @@ import Nav from "./Nav";
 
 export default function Navbar({
   navOpen,
+  setNavOpen,
   onNavBtnClick,
   scrolled,
   mobileNavbar,
@@ -32,7 +33,10 @@ export default function Navbar({
       <div className="container nav-container">
         <Link
           to="/"
-          onClick={() => scrollTo(top)}
+          onClick={() => {
+            scrollTo({ top: 0, left: 0, behavior: "smooth" });
+            setNavOpen(false);
+          }}
           className="Soojeong Park logo"
         >
           <Logo />

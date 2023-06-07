@@ -66,6 +66,7 @@ export default function Header() {
     <header className={`header ${scrolled ? "header-scrolled" : ""}`}>
       <Navbar
         navOpen={navOpen}
+        setNavOpen={setNavOpen}
         onNavBtnClick={handleNavToggle}
         scrolled={scrolled}
         mobileNavbar={mobileNavbar}
@@ -73,9 +74,9 @@ export default function Header() {
       {mobileNavbar && (
         <Nav
           navOpen={navOpen}
+          setNavOpen={setNavOpen}
           onNavOverlayClick={handleNavOverlayClick}
           mobileNavbar={mobileNavbar}
-          setNavOpen={setNavOpen}
         />
       )}
     </header>

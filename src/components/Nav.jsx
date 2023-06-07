@@ -5,7 +5,6 @@ export default function Nav({
   onNavOverlayClick,
   mobileNavbar,
   setNavOpen,
-  hashLink,
 }) {
   const handleNavLinkClick = () => {
     setNavOpen(false);
@@ -27,7 +26,7 @@ export default function Nav({
           className={({ isActive }) => (isActive ? "nav--active" : "")}
           onClick={() => {
             handleScrollToTop();
-            mobileNavbar && handleNavLinkClick;
+            mobileNavbar && setNavOpen(false);
           }}
         >
           Home
