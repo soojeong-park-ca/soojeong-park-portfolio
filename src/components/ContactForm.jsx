@@ -3,9 +3,9 @@ import emailjs from "@emailjs/browser";
 
 export default function ContactForm() {
   const [error, setError] = useState(false);
-  const [formSubmitted, setFormSubmitted] = useState(true);
+  const [formSubmitted, setFormSubmitted] = useState(false);
 
-  const [popupOpen, setPopupOpen] = useState(true);
+  const [popupOpen, setPopupOpen] = useState(false);
 
   const form = useRef(null);
 
